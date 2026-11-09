@@ -3,6 +3,8 @@
 .env.*
 !.env.example
 
+uploads/
+
 # Python virtual environments
 venv/
 .venv/
