@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced RAG</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header"><div class="brand-mark">R</div><div><h1>Advanced RAG</h1><p>Document intelligence workspace</p></div><span class="status"><span class="status-dot"></span> Local</span></header>
+    <section class="conversation" id="conversation" role="log" aria-live="polite" aria-label="Chat messages">
+      <div class="welcome" id="welcome"><div class="welcome-icon">✦</div><h2>Ask your documents anything.</h2><p>Upload a PDF to start building your knowledge workspace. Document search will be available in the next phase.</p></div>
+    </section>
+    <section class="composer-wrap">
+      <div class="attachment" id="attachment" hidden></div>
+      <form class="composer" id="chat-form">
+        <div class="upload-wrap"><button class="icon-button plus" type="button" id="plus-button" aria-label="Attachment options" aria-expanded="false">+</button><div class="upload-menu" id="upload-menu" hidden><button type="button" id="upload-button">↑ &nbsp; Upload document</button></div></div>
+        <input type="file" id="file-input" accept=".pdf,application/pdf" hidden>
+        <textarea id="message-input" placeholder="Ask a question..." aria-label="Message" rows="1" maxlength="10000"></textarea>
+        <button class="send-button" id="send-button" type="submit" aria-label="Send message">➜</button>
+      </form>
+      <p class="footnote">Local workspace · PDF uploads up to 20 MB · Indexing coming next</p>
+    </section>
+  </main>
+</body>
+</html>
